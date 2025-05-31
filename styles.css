@@ -1,0 +1,159 @@
+body {
+  background-image: url(images/pink-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin-top: 80px;
+  text-align: center;
+  font-size: 2.5rem;
+  color: black;
+}
+
+.table-container {
+  background-color: white;
+  margin: 25px auto;
+  min-height: 400px;
+  width: 90%;
+  max-width: 530px;
+  border-radius: 10px;
+  padding: 10px;
+  border: 4px dashed black;
+
+  display: flex;
+  flex-direction: column;
+}
+
+#input-area {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+
+#search {
+  flex: 1 1 auto;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  min-width: 0;
+}
+
+.Addbtn {
+  background-color: lightpink;
+  font-size: 1rem;
+  border-radius: 20px;
+  border: 1px solid black;
+  padding: 6px 15px;
+  cursor: pointer;
+  width: auto;
+}
+.edit-btn,
+.delete-btn {
+  cursor: pointer; 
+}
+
+.Addbtn:hover {
+  background-color: palevioletred;
+}
+
+h2 {
+  text-align: center;
+  margin: 10px 0;
+  font-size: 1.5rem;
+}
+
+#list-container {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  width: 100%;
+  background-color: white;
+  flex-grow: 1;
+  overflow-y: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  max-height: 300px;
+}
+
+input[type="checkbox"] {
+  accent-color: white;
+}
+
+#list-container li {
+  background-color: lightpink;
+  margin: 5px 10px;
+  padding: 10px 15px;
+  border-radius: 8px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  flex-wrap: wrap;
+  word-break: break-word;
+}
+
+.counter-container {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 1rem;
+  color: black;
+}
+
+.completed span {
+  text-decoration: line-through;
+  color: gray;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+  .table-container {
+    padding: 10px; 
+  }
+
+  #input-area {
+    flex-direction: column; 
+    gap: 8px;
+  }
+
+  #search {
+    font-size: 1rem;
+    width: 100%; 
+    min-width: 0;          
+    border-radius: 15px;
+  }
+
+  .Addbtn {
+    font-size: 1rem;
+    padding: 8px 15px;
+    width: 100%;          
+    border-radius: 15px;
+  }
+
+  #list-container {
+    max-height: 250px;     
+  }
+
+  #list-container li {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+    flex-direction: column; 
+    align-items: flex-start;
+    gap: 5px;
+  }
+}
+
+
+
